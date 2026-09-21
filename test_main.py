@@ -1,4 +1,4 @@
-from goodhello import hello, bye
+from goodmorning import hello, bye
 
 
 def test_hello_returns_none():
