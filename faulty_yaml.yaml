@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata
+ name: banking-app
+spec:
+  replicas: 3
+  selector:
+	matchLabels:
+		app: baking-app
+ template:
+	metadata:
+	 labels:
+	  app: banking-app
+spec:
+ containers:
+	-name: baking-app
+	image: ymb-banking-app:v1
+	ports
+	 containerPort: 80
+
