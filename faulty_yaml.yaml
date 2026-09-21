@@ -13,8 +13,10 @@ spec:
 	  app: banking-app
 spec:
  containers:
-	-name: baking-app
+	- name: baking-app
 	image: ymb-banking-app:v1
 	ports
-	 containerPort: 80
+	- containerPort: 5000
+	
+
 
